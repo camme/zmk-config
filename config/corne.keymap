@@ -5,7 +5,7 @@
     cs-gpios = <&pro_micro 9 GPIO_ACTIVE_HIGH>;
 };
 
-#define xxxxx &none
+#define xxxxx &trans
 
 / {
 
