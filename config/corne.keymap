@@ -35,7 +35,7 @@ xxxxx      &kp SINGLE_QUOTE      &kp DOUBLE_QUOTES  &kp NUMBER_7  &kp NUMBER_8  
             label = "Numbers";
         };
 
-        navigation {
+        nav {
             bindings = <
 xxxxx  xxxxx  xxxxx  xxxxx  xxxxx  xxxxx          &kp HOME    &kp UP_ARROW    &kp END  xxxxx  xxxxx  xxxxx
 xxxxx  xxxxx  xxxxx  xxxxx  xxxxx  xxxxx    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  xxxxx  xxxxx  xxxxx
@@ -57,7 +57,7 @@ xxxxx  xxxxx  &kp LG(NUMBER_9)  &kp LG(NUMBER_0)  &kp LG(LS(NUMBER_1))  &kp LG(L
             label = "Super";
         };
 
-        bluetooth {
+        ble {
             bindings = <
 xxxxx  xxxxx         xxxxx         xxxxx         xxxxx  xxxxx    xxxxx  xxxxx  xxxxx  xxxxx  xxxxx  xxxxx
 xxxxx  xxxxx  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  xxxxx    xxxxx  xxxxx  xxxxx  xxxxx  xxxxx  xxxxx
