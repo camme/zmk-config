@@ -5,6 +5,8 @@
     cs-gpios = <&pro_micro 9 GPIO_ACTIVE_HIGH>;
 };
 
+#define xxxxx &none
+
 / {
 
     keymap {
@@ -12,9 +14,9 @@
 
         base {
             bindings = <
-&none           &kp Q           &kp W               &kp F        &kp P    &kp B      &lt 3 J          &kp L        &kp U        &kp Y  &kp SEMICOLON  &none
-&none  &mt LEFT_GUI A  &mt LEFT_ALT R  &mt LEFT_CONTROL S  &mt LSHFT T  &lt 2 G        &kp M    &mt RSHFT N  &mt RCTRL E  &mt RSHFT I     &mt RCMD O  &none
-&none           &kp Z           &kp X               &kp C        &kp D    &kp V        &kp K          &kp H    &kp COMMA   &kp PERIOD      &kp SLASH  &none
+xxxxx           &kp Q           &kp W               &kp F        &kp P    &kp B      &lt 3 J          &kp L        &kp U        &kp Y  &kp SEMICOLON  xxxxx
+xxxxx  &mt LEFT_GUI A  &mt LEFT_ALT R  &mt LEFT_CONTROL S  &mt LSHFT T  &lt 2 G        &kp M    &mt RSHFT N  &mt RCTRL E  &mt RSHFT I     &mt RCMD O  xxxxx
+xxxxx           &kp Z           &kp X               &kp C        &kp D    &kp V        &kp K          &kp H    &kp COMMA   &kp PERIOD      &kp SLASH  xxxxx
                                                &kp ESCAPE    &kp SPACE  &kp TAB    &kp ENTER  &kp BACKSPACE  &lt 1 LG(F)
             >;
 
@@ -23,10 +25,10 @@
 
         numbers {
             bindings = <
-&none  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3        &kp SLASH      &none  &none  &none      &kp SLASH  &none
-&none        &kp LEFT_BRACE        &kp RIGHT_BRACE  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6    &kp BACKSLASH      &none  &none  &none  &kp BACKSLASH  &none
-&none      &kp SINGLE_QUOTE      &kp DOUBLE_QUOTES  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9         &kp PIPE      &none  &none  &none       &kp PIPE  &none
-                                                      &kp ESCAPE     &kp SPACE       &kp TAB        &kp ENTER  &kp RSHFT  &none
+xxxxx  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3        &kp SLASH      xxxxx  xxxxx  xxxxx      &kp SLASH  xxxxx
+xxxxx        &kp LEFT_BRACE        &kp RIGHT_BRACE  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6    &kp BACKSLASH      xxxxx  xxxxx  xxxxx  &kp BACKSLASH  xxxxx
+xxxxx      &kp SINGLE_QUOTE      &kp DOUBLE_QUOTES  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9         &kp PIPE      xxxxx  xxxxx  xxxxx       &kp PIPE  xxxxx
+                                                      &kp ESCAPE     &kp SPACE       &kp TAB        &kp ENTER  &kp RSHFT  xxxxx
             >;
 
             label = "Numbers";
@@ -34,10 +36,10 @@
 
         navigation {
             bindings = <
-&none  &none  &none  &none  &none  &none          &kp HOME    &kp UP_ARROW    &kp END  &none  &none  &none
-&none  &none  &none  &none  &none  &none    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &none  &none  &none
-&none  &none  &none  &none  &none  &none       &kp PAGE_UP   &kp PAGE_DOWN      &none  &none  &none  &none
-                     &none  &none  &none             &none           &none      &none
+xxxxx  xxxxx  xxxxx  xxxxx  xxxxx  xxxxx          &kp HOME    &kp UP_ARROW    &kp END  xxxxx  xxxxx  xxxxx
+xxxxx  xxxxx  xxxxx  xxxxx  xxxxx  xxxxx    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  xxxxx  xxxxx  xxxxx
+xxxxx  xxxxx  xxxxx  xxxxx  xxxxx  xxxxx       &kp PAGE_UP   &kp PAGE_DOWN      xxxxx  xxxxx  xxxxx  xxxxx
+                     xxxxx  xxxxx  xxxxx             xxxxx           xxxxx      xxxxx
             >;
 
             label = "Navigation";
@@ -45,10 +47,10 @@
 
         super {
             bindings = <
-&none  &none  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)      &kp LG(NUMBER_3)      &kp LG(NUMBER_4)    &none  &none  &none  &none  &none  &none
-&none  &none  &kp LG(NUMBER_5)  &kp LG(NUMBER_6)      &kp LG(NUMBER_7)      &kp LG(NUMBER_8)    &none  &none  &none  &none  &none  &none
-&none  &none  &kp LG(NUMBER_9)  &kp LG(NUMBER_0)  &kp LG(LS(NUMBER_1))  &kp LG(LS(NUMBER_2))    &none  &none  &none  &none  &none  &none
-                                           &none                 &none                 &none    &none  &none  &none
+xxxxx  xxxxx  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)      &kp LG(NUMBER_3)      &kp LG(NUMBER_4)    xxxxx  xxxxx  xxxxx  xxxxx  xxxxx  xxxxx
+xxxxx  xxxxx  &kp LG(NUMBER_5)  &kp LG(NUMBER_6)      &kp LG(NUMBER_7)      &kp LG(NUMBER_8)    xxxxx  xxxxx  xxxxx  xxxxx  xxxxx  xxxxx
+xxxxx  xxxxx  &kp LG(NUMBER_9)  &kp LG(NUMBER_0)  &kp LG(LS(NUMBER_1))  &kp LG(LS(NUMBER_2))    xxxxx  xxxxx  xxxxx  xxxxx  xxxxx  xxxxx
+                                           xxxxx                 xxxxx                 xxxxx    xxxxx  xxxxx  xxxxx
             >;
 
             label = "Super";
@@ -56,10 +58,10 @@
 
         bluetooth {
             bindings = <
-&none  &none         &none         &none         &none  &none    &none  &none  &none  &none  &none  &none
-&none  &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none    &none  &none  &none  &none  &none  &none
-&none  &none         &none         &none         &none  &none    &none  &none  &none  &none  &none  &none
-                                  &tog 0         &none  &none    &none  &none  &none
+xxxxx  xxxxx         xxxxx         xxxxx         xxxxx  xxxxx    xxxxx  xxxxx  xxxxx  xxxxx  xxxxx  xxxxx
+xxxxx  xxxxx  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  xxxxx    xxxxx  xxxxx  xxxxx  xxxxx  xxxxx  xxxxx
+xxxxx  xxxxx         xxxxx         xxxxx         xxxxx  xxxxx    xxxxx  xxxxx  xxxxx  xxxxx  xxxxx  xxxxx
+                                  &tog 0         xxxxx  xxxxx    xxxxx  xxxxx  xxxxx
             >;
 
             label = "Bluetooth";
