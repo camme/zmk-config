@@ -7,7 +7,6 @@
 };
 
 / {
-
     behaviors {
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
@@ -16,7 +15,9 @@
             tapping-term-ms = <150>;
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
+            bindings =
+                <&kp>,
+                <&kp>;
         };
     };
 
@@ -25,10 +26,10 @@
 
         base {
             bindings = <
-&none           &kp Q           &kp W               &kp F        &kp P      &kp B        &lt 3 J          &kp L        &kp U        &kp Y  &kp SEMICOLON  &none
-&none  &hm LEFT_GUI A  &hm LEFT_ALT R  &hm LEFT_CONTROL S  &hm LSHFT T    &lt 2 G          &kp M    &hm RSHFT N  &hm RCTRL E  &hm RSHFT I     &hm RCMD O  &none
-&none           &kp Z           &kp X               &kp C        &kp D      &kp V          &kp K          &kp H    &kp COMMA   &kp PERIOD    &lt 4 SLASH  &none
-                                             &lt 3 ESCAPE    &kp SPACE  &lt 1 TAB    &lt 1 ENTER  &kp BACKSPACE  &lt 1 LG(F)
+&none           &kp Q           &kp W               &kp F        &kp P        &kp B        &lt 3 J          &kp L        &kp U        &kp Y  &kp SEMICOLON  &none
+&none  &hm LEFT_GUI A  &hm LEFT_ALT R  &hm LEFT_CONTROL S  &hm LSHFT T      &lt 2 G          &kp M    &hm RSHFT N  &hm RCTRL E  &hm RSHFT I     &hm RCMD O  &none
+&none         &lt 4 Z           &kp X               &kp C        &kp D        &kp V          &kp K          &kp H    &kp COMMA   &kp PERIOD    &lt 4 SLASH  &none
+                                             &lt 3 ESCAPE      &kp TAB  &lt 1 SPACE    &lt 1 ENTER  &kp BACKSPACE  &lt 1 LG(F)
             >;
 
             label = "Base";
@@ -69,13 +70,24 @@
 
         bluetooth {
             bindings = <
-&none  &none         &none         &none         &none  &none    &none  &none  &none  &none  &none  &none
-&none  &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none    &none  &none  &none  &none  &none  &none
-&none  &none         &none         &none         &none  &none    &none  &none  &none  &none  &none  &none
-                                  &tog 0         &none  &none    &none  &none  &none
+&trans  &trans        &trans        &trans        &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans        &trans        &trans        &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                                    &tog 0        &trans  &trans    &trans  &trans  &trans
             >;
 
             label = "Bluetooth";
+        };
+
+        func {
+            bindings = <
+&trans  &trans  &trans  &kp F1  &kp F2  &trans      &kp C_VOLUME_UP  &kp C_BRI_INC  &kp F1  &kp F2  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp C_VOLUME_DOWN  &kp C_BRI_DEC  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans           &kp K_MUTE         &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans               &trans         &trans  &trans
+            >;
+
+            label = "Functions";
         };
     };
 };
