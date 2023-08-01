@@ -37,10 +37,10 @@
 
         numbers {
             bindings = <
-&none  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3        &kp SLASH      &kp TILDE     &kp AMPERSAND       &kp ASTERISK      &kp SLASH  &none
-&none        &kp LEFT_BRACE        &kp RIGHT_BRACE  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6    &kp BACKSLASH  &kp LESS_THAN  &kp GREATER_THAN   &kp SINGLE_QUOTE  &kp BACKSLASH  &none
-&none      &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9         &kp PIPE    &kp PERCENT         &kp CARET  &kp DOUBLE_QUOTES       &kp PIPE  &none
-                                                      &kp ESCAPE     &kp SPACE       &kp TAB        &kp ENTER      &kp RSHFT             &none
+&none  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &kp EQUAL      &kp TILDE     &kp AMPERSAND       &kp ASTERISK      &kp SLASH  &none
+&none        &kp LEFT_BRACE        &kp RIGHT_BRACE  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6     &kp PLUS  &kp LESS_THAN  &kp GREATER_THAN   &kp SINGLE_QUOTE  &kp BACKSLASH  &none
+&none      &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9    &kp MINUS    &kp PERCENT         &kp CARET  &kp DOUBLE_QUOTES       &kp PIPE  &none
+                                                      &kp ESCAPE       &kp TAB     &kp SPACE    &kp ENTER      &kp RSHFT    &kp UNDERSCORE
             >;
 
             label = "Numbers";
