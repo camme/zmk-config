@@ -7,12 +7,16 @@
 };
 
 / {
-    combos {
-        compatible = "zmk,combos";
 
-        new_combo {
-            bindings = <&trans>;
-            key-positions = <>;
+    behaviors {
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
         };
     };
 
@@ -22,7 +26,7 @@
         base {
             bindings = <
 &none           &kp Q           &kp W               &kp F        &kp P      &kp B        &lt 3 J          &kp L        &kp U        &kp Y  &kp SEMICOLON  &none
-&none  &mt LEFT_GUI A  &mt LEFT_ALT R  &mt LEFT_CONTROL S  &mt LSHFT T    &lt 2 G          &kp M    &mt RSHFT N  &mt RCTRL E  &mt RSHFT I     &mt RCMD O  &none
+&none  &hm LEFT_GUI A  &hm LEFT_ALT R  &hm LEFT_CONTROL S  &hm LSHFT T    &lt 2 G          &kp M    &hm RSHFT N  &hm RCTRL E  &hm RSHFT I     &hm RCMD O  &none
 &none           &kp Z           &kp X               &kp C        &kp D      &kp V          &kp K          &kp H    &kp COMMA   &kp PERIOD    &lt 4 SLASH  &none
                                              &lt 3 ESCAPE    &kp SPACE  &lt 1 TAB    &lt 1 ENTER  &kp BACKSPACE  &lt 1 LG(F)
             >;
